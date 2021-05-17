@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://miro.com/app/static/sdk.1.1.js"></script>
-    <script>
-    miro.onReady(() => {
-      miro.initialize({
-        extensionPoints: {
-          bottomBar: {
-            title: 'Some title',
-            svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
-            onClick: () => {
-              alert('Hi!')
-            }
-          }
-        }
-      })
-    })
-    </script>
+   <script type = "text/javascript" >
+    // JavaScript program to illustrate 
+    // calculation of no. of days between two date 
+  
+    // To set two dates to two variables
+    var date1 = new Date("06/30/2019");
+var date2 = new Date("07/30/2019");
+  
+// To calculate the time difference of two dates
+var Difference_In_Time = date2.getTime() - date1.getTime();
+  
+// To calculate the no. of days between two dates
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+  
+//To display the final no. of days (result)
+document.write("Total number of days between dates  <br>"
+               + date1 + "<br> and <br>" 
+               + date2 + " is: <br> " 
+               + Difference_In_Days);
+  
+</script>
 </head>
 </html>
